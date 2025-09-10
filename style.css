@@ -62,3 +62,21 @@ header img {
   max-width: 600px;
   height: auto;
 }
+img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px; 
+
+#menu img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px; 
+
+header img {
+  width: 50%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 15px; 
+}
