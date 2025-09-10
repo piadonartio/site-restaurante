@@ -7,7 +7,7 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #a62727;
-  color: #000000;
+  color: #000;
   padding: 20px;
 }
 
@@ -17,6 +17,15 @@ header {
   text-align: center;
   padding: 40px 20px;
   border-radius: 8px;
+}
+
+header img {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
 }
 
 section {
@@ -32,95 +41,10 @@ h2 {
   color: #7b3c3c;
 }
 
-ul {
-  list-style: none;
-}
-
-li {
-  padding: 5px 0;
-}
-
-footer {
-  text-align: center;
-  color: #ffffff;
-  margin-top: 40px;
-}
-img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-}
-
-#menu img {
-  width: 80%;
-  max-width: 300px;
-  height: auto;
-}
-
-header img {
-  width: 50%;
-  max-width: 600px;
-  height: auto;
-}
-img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 15px; 
-}
-#menu img {
-  width: 80%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 15px; 
-}
-header img {
-  width: 50%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 15px; 
-}
-img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 15px;
-}
-
-#menu img {
-  width: 80%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 15px;
-}
-
-header img {
-  width: 50%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 15px;
-}
-
-#menu li {
-  font-size: 1.2rem;
-  font-family: 'Arial', sans-serif;
-  font-weight: bold;
-  color: #333;
-  margin: 10px 0;
-}
-
-#menu li + li {
-  font-size: 1.4rem;
-  font-family: 'Georgia', serif;
-  font-weight: bold;
-  color: #E74C3C;
-  margin-top: 5px;
-}
-img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 15px;
+#menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 #menu img {
@@ -131,21 +55,6 @@ img {
   margin: 10px;
 }
 
-header img {
-  width: 60%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 15px;
-  display: block;
-  margin: 0 auto;
-}
-
-#menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 #menu li {
   font-size: 1.2rem;
   font-family: 'Arial', sans-serif;
@@ -160,4 +69,33 @@ header img {
   font-weight: bold;
   color: #E74C3C;
   margin-top: 5px;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  #menu img {
+    width: 100%;
+    max-width: none;
+  }
+
+  #menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header img {
+    width: 80%;
+  }
 }
