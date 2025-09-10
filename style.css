@@ -59,7 +59,7 @@ h2 {
 
 #menu img {
   width: 45%;
-  max-width: 400px;
+  max-width: 300px;
   height: auto;
   border-radius: 15px;
   margin: 20px;
@@ -79,6 +79,13 @@ h2 {
   font-weight: bold;
   color: #E74C3C;
   margin-top: 5px;
+}
+
+#menu img:first-of-type {
+  width: 60%;
+  max-width: 500px;
+  display: block;
+  margin: 20px auto;
 }
 
 #localizacao, #contato {
@@ -122,5 +129,6 @@ footer {
     padding: 15px;
   }
 }
+
 
 
