@@ -19,13 +19,22 @@ header {
   border-radius: 8px;
 }
 
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
 header img {
   width: 60%;
   max-width: 600px;
   height: auto;
   border-radius: 15px;
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 section {
@@ -39,6 +48,7 @@ section {
 h2 {
   margin-bottom: 10px;
   color: #7b3c3c;
+  font-size: 2rem;
 }
 
 #menu {
@@ -71,17 +81,26 @@ h2 {
   margin-top: 5px;
 }
 
+#localizacao, #contato {
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+#localizacao p, #contato p {
+  margin-top: 10px;
+}
+
 footer {
   text-align: center;
   color: #ffffff;
   margin-top: 40px;
-}
-
-img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  border-radius: 15px;
+  background-color: #705959;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 @media (max-width: 768px) {
@@ -98,4 +117,9 @@ img {
   header img {
     width: 80%;
   }
+
+  section {
+    padding: 15px;
+  }
 }
+
