@@ -45,3 +45,23 @@ footer {
   color: #b18383;
   margin-top: 40px;
 }
+/* Redefine o tamanho das imagens */
+img {
+  width: 100%;  /* Faz as imagens ocuparem 100% da largura do contêiner (ajustável) */
+  max-width: 500px;  /* Limita a largura máxima da imagem */
+  height: auto;  /* Mantém a proporção original da imagem */
+}
+
+/* Para imagens dentro do menu */
+#menu img {
+  width: 80%;  /* Ajusta a largura das imagens no menu */
+  max-width: 300px;  /* Limita a largura máxima */
+  height: auto;
+}
+
+/* Para a imagem no header (se houver uma imagem principal) */
+header img {
+  width: 50%;  /* Ajuste conforme necessário */
+  max-width: 600px;  /* Limita a largura máxima */
+  height: auto;
+}
