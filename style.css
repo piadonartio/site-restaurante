@@ -8,25 +8,26 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #a62727;
   color: #fff;
+  line-height: 1.6;
   padding: 20px;
 }
 
-/* Cabeçalho */
 header {
   background-color: #705959;
   color: white;
   text-align: center;
   padding: 40px 20px;
   border-radius: 8px;
+  margin-bottom: 30px;
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  margin-bottom: 15px;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 header img {
@@ -38,28 +39,39 @@ header img {
   margin: 20px auto;
 }
 
-/* Seções */
-section {
-  margin: 30px 0;
-  background-color: #b18c8c;
-  padding: 20px;
-  border-left: 5px solid #9d4141;
-  border-radius: 4px;
-}
-
-/* Títulos */
-h2 {
-  margin-bottom: 10px;
-  color: #7b3c3c;
-  font-size: 2rem;
-}
-
-/* Cardápio */
 #menu {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#menu h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#menu ul {
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
+}
+
+#menu li {
+  font-size: 1.3rem;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#menu li + li {
+  font-size: 1.4rem;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  color: #E74C3C;
 }
 
 #menu img {
@@ -73,73 +85,5 @@ h2 {
 
 #menu img:first-of-type {
   width: 60%;
-  max-width: 500px;
-  margin-bottom: 20px;
+  max-width
 }
-
-#menu li {
-  font-size: 1.2rem;
-  font-family: 'Arial', sans-serif;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  margin-top: 10px;
-}
-
-#menu li + li {
-  font-size: 1.4rem;
-  font-family: 'Georgia', serif;
-  font-weight: bold;
-  color: #E74C3C;
-  margin-top: 5px;
-}
-
-/* Localização e Contato */
-#localizacao, #contato {
-  text-align: center;
-  font-size: 1.2rem;
-  background-color: #fff;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 5px;
-}
-
-#localizacao p, #contato p {
-  margin-top: 10px;
-}
-
-/* Rodapé */
-footer {
-  text-align: center;
-  color: #ffffff;
-  margin-top: 40px;
-  background-color: #705959;
-  padding: 20px;
-  border-radius: 8px;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-  #menu {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #menu img {
-    width: 80%;
-    max-width: none;
-  }
-
-  header img {
-    width: 80%;
-  }
-
-  section {
-    padding: 15px;
-  }
-}
-
-
-
-
-
