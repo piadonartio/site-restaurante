@@ -7,10 +7,11 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #a62727;
-  color: #000;
+  color: #fff;
   padding: 20px;
 }
 
+/* Cabeçalho */
 header {
   background-color: #705959;
   color: white;
@@ -37,6 +38,7 @@ header img {
   margin: 20px auto;
 }
 
+/* Seções */
 section {
   margin: 30px 0;
   background-color: #b18c8c;
@@ -45,12 +47,14 @@ section {
   border-radius: 4px;
 }
 
+/* Títulos */
 h2 {
   margin-bottom: 10px;
   color: #7b3c3c;
   font-size: 2rem;
 }
 
+/* Cardápio */
 #menu {
   display: flex;
   flex-wrap: wrap;
@@ -79,6 +83,7 @@ h2 {
   font-weight: bold;
   color: #333;
   text-align: center;
+  margin-top: 10px;
 }
 
 #menu li + li {
@@ -89,13 +94,51 @@ h2 {
   margin-top: 5px;
 }
 
+/* Localização e Contato */
 #localizacao, #contato {
   text-align: center;
   font-size: 1.2rem;
   background-color: #fff;
   padding: 20px;
   margin: 20px 0;
-  border-r
+  border-radius: 5px;
+}
+
+#localizacao p, #contato p {
+  margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 40px;
+  background-color: #705959;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  #menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #menu img {
+    width: 80%;
+    max-width: none;
+  }
+
+  header img {
+    width: 80%;
+  }
+
+  section {
+    padding: 15px;
+  }
+}
+
 
 
 
