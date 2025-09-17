@@ -86,3 +86,9 @@ footer {
     width: 80%;
   }
 }
+#menu img:first-of-type {
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px; 
+  width: 60%; 
+}
