@@ -58,11 +58,18 @@ footer {
 }
 
 #menu img {
-  width: 80%;
+  width: 100%;
   height: auto;
   border-radius: 15px;
   object-fit: cover;
   margin-bottom: 10px;
+}
+
+#menu img:first-of-type {
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 60%;
 }
 
 @media (max-width: 768px) {
@@ -71,7 +78,7 @@ footer {
   }
 
   li {
-    width: 30%;
+    width: 100%;
     margin-top: 15px;
   }
 
