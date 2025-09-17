@@ -79,3 +79,11 @@ footer {
     width: 80%;
   }
 }
+#menu img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
